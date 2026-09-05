@@ -23,7 +23,7 @@ jobs:
     outputs:
       version: ${{ steps.check-version.outputs.version }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: Install poetry
         run: pipx install poetry==${{ env.POETRY_VERSION }}
       - name: Set up Python 3.12

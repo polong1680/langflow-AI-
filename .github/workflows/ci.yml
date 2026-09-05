@@ -64,7 +64,7 @@ jobs:
       tests: ${{ steps.filter.outputs.tests }}
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           ref: ${{ inputs.branch || github.ref }}
       - name: Filter Paths
